@@ -4,7 +4,7 @@ import nba from 'nba';
 import { PROFILE_PIC_URL_PREFIX } from '../constants';
 
 const Option = AutoComplete.Option;
-/** 三个部分：input，options list，select*/
+/** 三个部分：input，options list，select，面试提问*/
 export class SearchBar extends React.Component {
     state = {
         dataSource: [],
@@ -26,7 +26,7 @@ export class SearchBar extends React.Component {
 
         onSelect = (playerName) => {
             this.props.handleSelectPlayer(playerName);
-            console.log(playerName);
+            // console.log(playerName);
         }
 
         render() {
